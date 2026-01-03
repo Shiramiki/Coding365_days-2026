@@ -15,6 +15,7 @@ for days in range(0, day):
     middayTotal += middays
     midnight[days] = midnights
     midday[days] =middays
+    # Today distracted me so I could not finish the last part of the code.
 
 print("Day\tMidday\tMidnight")
 for i in range(day):
