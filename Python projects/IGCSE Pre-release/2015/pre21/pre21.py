@@ -12,10 +12,12 @@ for days in range(0, day):
     midnights=int(input(f"Please enter the midnight temperature for day {days + 1}:"))
     while midnights < -30 or midnights > 50:
         midnights=int(input(f"Invalid input. Please enter the midnight temperature for day {days + 1} between -30 and 50:"))
-
+    middayTotal += middays
     midnight[days] = midnights
     midday[days] =middays
 
 print("Day\tMidday\tMidnight")
 for i in range(day):
     print(f"{i + 1}\t{midday[i]}\t{midnight[i]}")
+
+average =
