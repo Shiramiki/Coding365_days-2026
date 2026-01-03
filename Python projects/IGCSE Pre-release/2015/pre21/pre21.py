@@ -21,4 +21,4 @@ print("Day\tMidday\tMidnight")
 for i in range(day):
     print(f"{i + 1}\t{midday[i]}\t{midnight[i]}")
 
-average =
+
