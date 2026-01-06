@@ -12,6 +12,7 @@ def dayInMonth():
     except:
         print("Invalid input. Please enter a valid integer.")
         exit()
+        dayInMonth()
 
     else:
         midday = [None]*day
