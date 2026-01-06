@@ -11,7 +11,6 @@ def dayInMonth():
             day = int(input("Invalid input. Please enter a number between 28 and 31:"))
     except:
         print("Invalid input. Please enter a valid integer.")
-        exit()
         dayInMonth()
 
     else:
@@ -26,7 +25,6 @@ def tempMiddayValues():
                 middays=int(input(f"Invalid input. Please enter the midday temperature for day {days + 1} between -30 and 50:"))   
     except:
         print("Invalid input. Please enter a valid integer.")
-        exit() 
         tempMiddayValues()
         
     else:
@@ -42,7 +40,6 @@ def tempMidnightValues():
             midnights=int(input(f"Invalid input. Please enter the midnight temperature for day {days + 1} between -30 and 50:"))
     except:
         print("Invalid input. Please enter a valid integer.")
-        exit()
         tempMidnightValues()
     else:
         return midnights
