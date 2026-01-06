@@ -49,7 +49,7 @@ def tempMidnightValues():
 
 
 
-
+dayInMonth()
 for days in range(0, day):
     temp = tempMiddayValues()
     midnight[days] = temp.pop()  # Get the last element which is
