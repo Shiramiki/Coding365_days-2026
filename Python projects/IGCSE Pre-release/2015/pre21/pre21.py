@@ -2,11 +2,6 @@
 middayTotal = 0
 midnightTotal = 0
 
-
-midday = [None]*day
-midnight = [None]*day
-
-
 try:
     day = int(input("Please enter the number of days in the month:"))
     while day < 28 or day > 31:
@@ -14,6 +9,9 @@ try:
 except:
     print("Invalid input. Please enter a valid integer.")
     exit()
+
+midday = [None]*day
+midnight = [None]*day
 
 
 
