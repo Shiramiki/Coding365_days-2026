@@ -25,7 +25,8 @@ def tempMiddayValues():
                 middays=int(input(f"Invalid input. Please enter the midday temperature for day {days + 1} between -30 and 50:"))   
     except:
         print("Invalid input. Please enter a valid integer.")
-        TempMiddayValues()
+        tempMiddayValues()
+        # Recursion to re-prompt for valid input
         return [middays, midnights]
         
     else:
