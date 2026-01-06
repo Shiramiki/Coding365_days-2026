@@ -25,14 +25,14 @@ def tempMiddayValues():
                 middays=int(input(f"Invalid input. Please enter the midday temperature for day {days + 1} between -30 and 50:"))   
     except:
         print("Invalid input. Please enter a valid integer.")
-        middays=tempMiddayValues()
-
+        TempMiddayValues()
+        return [middays, midnights]
         
     else:
 
         midnights =tempMidnightValues()
         print([middays, midnights])
-        return [middays, midnights]
+        
 
 
 def tempMidnightValues():
@@ -43,6 +43,7 @@ def tempMidnightValues():
     except:
         print("Invalid input. Please enter a valid integer.")
         midnights=tempMidnightValues()
+        return midnights
     else:
         return midnights
 
@@ -52,6 +53,7 @@ def tempMidnightValues():
 dayInMonth()
 for days in range(0, day):
     temp = tempMiddayValues()
+    print(temp)
     midnight[days] = temp.pop()  # Get the last element which is
     midday[days] = temp.pop()    # Get the first element which is
     middayTotal += midday[days]
