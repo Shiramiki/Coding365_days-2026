@@ -30,8 +30,8 @@ def tempMiddayValues():
     else:
         
         midnights =tempMidnightValues()
-        temp =[middays, midnights]
-        return temp
+        return [middays, midnights]
+
 
 def tempMidnightValues():
     try:
