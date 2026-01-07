@@ -26,13 +26,14 @@ def tempMiddayValues():
     except:
         print("Invalid input. Please enter a valid integer.")
         tempMiddayValues()
-        # Recursion to re-prompt for valid input
-        return [middays, midnights]
+        
+        return middays
         
     else:
 
         midnights =tempMidnightValues()
         print([middays, midnights])
+    return middays, midnights
         
 
 
@@ -53,6 +54,7 @@ def tempMidnightValues():
 
 dayInMonth()
 for days in range(0, day):
+    temp=[]
     temp = tempMiddayValues()
     print(temp)
     midnight[days] = temp.pop()  # Get the last element which is
