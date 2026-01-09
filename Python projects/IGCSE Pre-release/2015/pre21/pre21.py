@@ -49,6 +49,12 @@ def tempMidnightValues():
         return midnights
     else:
         return midnights
+    
+
+def highestTemp():
+    highestMidday = max(midday)
+    highestMidnight = max(midnight)
+    return highestMidday, highestMidnight
 
 
 
@@ -64,6 +70,12 @@ for days in range(0, day):
     middayAvg = middayTotal / day
     midnightTotal += midnight[days]
     midnightAvg = midnightTotal / day
+
+highestMidday, highestMidnight = highestTemp()  # call once
+
+print(f"Highest midday temperature: {highestMidday}")
+print(f"Highest midnight temperature: {highestMidnight}")
+
 
 
 print("Day\tMidday\tMidnight")
