@@ -27,13 +27,14 @@ def tempMiddayValues():
         print("Invalid input. Please enter a valid integer.")
         tempMiddayValues()
         
-        return middays
+        return tempMiddayValues()
+
         
     else:
 
         midnights =tempMidnightValues()
         print([middays, midnights])
-    return middays, midnights
+        return [middays, midnights]
         
 
 
